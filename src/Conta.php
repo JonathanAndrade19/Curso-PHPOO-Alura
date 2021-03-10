@@ -20,6 +20,11 @@ class Conta
 
     }
 
+    public function __destruct()
+    {
+        self::$numeroDeContas--;
+    }
+
     public function sacar(float $valorASacar)
     {
         if ($valorASacar > $this->saldo) {
