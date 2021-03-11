@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="text-align: center;margin-top: 2rem;">
+    <div style="margin: 45px 0px; justify-content: center; flex: 1; text-align: center;">
         <form action="index.php" method="POST">
             <label>Altura: </label>
             <input type="text" name="altura">
@@ -23,7 +24,7 @@
         $imc = $peso / $altura ** 2;
     ?>
     
-    <div style="text-align: center;margin-top: 2rem;">
+    <div style="border-radius: 15px; text-align: center; margin-top: 2rem; background-color: #f5f6fa; padding: 15px; justify-content: center;">
         <?php 
             echo "Seu IMC é de $imc.";
 
