@@ -33,7 +33,7 @@ function exibeMensagem(string $mensagem)
 // Função que serve para deixar o nome do titular da conta sempre em maiusculo, usando a variavel STRTOUPPER.
 function titularComLetrasMaiusculas(array &$conta)
 {
-    $conta['titular'] = strtoupper($conta['titular']);
+    $conta['titular'] = mb_strtoupper($conta['titular']);
 }
 
 
