@@ -7,10 +7,10 @@ use Alura\Banco\Service\Autenticador;
 require_once 'autoload.php';
 
 $autenticador = new Autenticador();
-$diretor = new Diretor(
+$umDiretor = new \Alura\Banco\Modelo\Funcionario\Gerente(
     'João da Silva',
     new CPF('123.456.789-10'),
     10000
 );
 
-$autenticador->tentaLogin($diretor, '4321');
+$autenticador->tentaLogin($umDiretor, '4321');
