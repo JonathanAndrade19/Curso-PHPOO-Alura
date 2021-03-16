@@ -2,8 +2,10 @@
 
 namespace Alura\Banco\Modelo;
 
-class Endereco
+final class Endereco
 {
+    use AcessoPropriedades; //trait
+
     private $cidade;
     private $bairro;
     private $rua;
